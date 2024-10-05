@@ -1,0 +1,628 @@
+* {
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Quicksand;
+    color: black;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+.navvvvv {
+    position: sticky;
+    top: 0;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 30px;
+    background-color: white;
+}
+#navbar:hover {
+    cursor: default;
+}
+#nav-menu a{
+    color: black;
+    transition: all 0.3s ease;
+    padding: 10px;
+    font-weight: bold;
+}
+#nav-menu a:hover{
+    color: #0077c2;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0077c2;
+}
+#nav-menu-2 a {
+    padding: 10px;
+    color: darkblue;
+    font-weight: 1000;
+    opacity: 0.6;
+}
+#nav-menu-2 a:hover{
+    color: darkblue;
+    opacity: 1;
+}
+#logo {
+    font-size: 20px;
+    display: flex;
+}
+#logo img{
+    width: 20%;
+}
+#nav-menu {
+    display: flex;
+}
+#nav-menu ul{
+    display: flex;
+}
+#nav-menu li{
+    list-style-type: none;
+    padding-right: 20px;
+}
+#nav-menu li a{
+    text-decoration: none;
+}
+#nav-menu-2 {
+    display: flex;
+}
+#nav-menu-2 a{
+    text-decoration: none;
+}
+#showcase {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #555555;
+}
+#showcase h1{
+    font-size: 40px;
+    max-width: 50%;
+    color: white;
+    margin-bottom: 60px;
+}
+#showcase img {
+    width: 40%;
+}
+#home-buttons a{
+    border-radius: 40px;
+    background-color:#222222;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+#home-buttons a:hover{
+    background-color:white;
+    color: black;
+}
+.Sub-Heading{
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+.pastpapers-main {
+    display: flex;
+    margin: 30px 0;
+}
+.pastpapers {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+}
+.image1 {
+    width: 200px;
+    margin: auto;
+}
+.image2 {
+    width: 200px;
+    margin: auto;
+}
+.image3 {
+    width: 200px;
+    margin: auto;
+}
+.edexcel-title {
+    text-align: center;
+    font-size: 60px;
+    margin: 30px 0;
+}
+.edexcel-subjects {
+    display: flex;
+    flex-direction: column;
+}
+/* math */
+.edexcel-math {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+.edexcel-math-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.edexcel-math-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-math-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-math-1 h1, h2, img{
+    margin: 0 15px;
+}
+.edexcel-math-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.edexcel-math-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.edexcel-math img{
+    width: 12%;
+}
+/* chemistry */
+.edexcel-chemistry {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.edexcel-chemistry-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.edexcel-chemistry-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-chemistry-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-chemistry-1 h1, h2, img{
+    margin: 0 15px;
+}
+.edexcel-chemistry-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.edexcel-chemistry-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.edexcel-chemistry img{
+    width: 12%;
+}
+/* Physics */
+.edexcel-physics {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+.edexcel-physics-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.edexcel-physics-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-physics-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-physics-1 h1, h2, img{
+    margin: 0 15px;
+}
+.edexcel-physics-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.edexcel-physics-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.edexcel-physics img{
+    width: 12%;
+}
+/* biology */
+.edexcel-biology {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+.edexcel-biology-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.edexcel-biology-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-biology-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edexcel-biology-1 h1, h2, img{
+    margin: 0 15px;
+}
+.edexcel-biology-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.edexcel-biology-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.edexcel-biology img{
+    width: 12%;
+}
+.cambridge-title {
+    text-align: center;
+    font-size: 60px;
+    margin: 30px 0;
+}
+/* ENglish 1st and 2nd*/
+.cambridge-english {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin-bottom: 35px;
+    background-color: #f4f4f4;
+}
+.cambridge-english-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.cambridge-english-1 h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-english-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-english-1 h1, h2, img{
+    margin: 0 15px;
+}
+.cambridge-english-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.cambridge-english-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.cambridge-english img{
+    width: 12%;
+}
+/* Arabic 1st */
+.cambridge-arabic {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+.cambridge-arabic-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.cambridge-arabic-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-arabic-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-arabic-1 h1, h2, img{
+    margin: 0 15px;
+}
+.cambridge-arabic-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.cambridge-arabic-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.cambridge-arabic img{
+    width: 12%;
+}
+/* computer science */
+.cambridge-computer-science {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+.cambridge-computer-science-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.cambridge-computer-science-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-computer-science-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-computer-science-1 h1, h2, img{
+    margin: 0 15px;
+}
+.cambridge-computer-science-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.cambridge-computer-science-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.cambridge-computer-science img{
+    width: 12%;
+}
+/* ICT */
+.cambridge-ict {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 35px;
+}
+.cambridge-ict-1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.cambridge-ict-1 h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-ict-1 h2{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cambridge-ict-1 h1, h2, img{
+    margin: 0 15px;
+}
+.cambridge-ict-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.cambridge-ict-2 a{
+    margin-right: 50px;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px;
+}
+.cambridge-ict img{
+    width: 12%;
+}
+.cambridge-sub-title {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.edexcel-sub-title {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+#physics-topic-questions-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+}
+.physics-topic-questions-1 {
+    font-size: 30px;
+    text-align: center;
+}
+.physics-topic-questions-table-1 {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.physics-topic-questions-table-1 li, a {
+    margin: 25px 0;
+    text-decoration: none;
+}
+.physics-topic-questions-table-1 ul {
+    list-style: none;
+}
+.note-1 {
+    text-align: center;
+}
+.physics-topic-questions-table-1 a {
+    color:#0077c2;
+    opacity: 0.6;
+}
+.physics-topic-questions-table-1 a:hover {
+    color:#0077c2;
+    opacity: 1;
+}
+table, td, th {
+    padding: 1rem;
+    text-align: center;
+}
+table {
+    font-size: 20px;
+}
+.slogans{
+    width: 100%;
+    margin: auto;
+}
+.slogan-1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 0;
+}
+.slogan-1 h2{
+    color:#000000;
+}
+
+.slogan-2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    padding-bottom: 50px;
+}
+.slogans {
+    background-color: #f3f3f3;
+}
+.mini-nav {
+    margin: 20px;
+    text-align: center;
+    padding: 50px;
+}
+.mini-nav h1 {
+    background: linear-gradient(45deg, #FF5733, #00C0FF);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 80%;
+    margin: auto;
+    animation: animateGradient 2s infinite;
+    font-size: 30px;
+}
+
+.w-hr {
+    background-color: blue;
+    height: 100px;
+}
+.x-hr {
+    background-color: black;
+    height: 1px;
+}
