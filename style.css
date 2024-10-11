@@ -189,6 +189,9 @@ body {
     color: white;
     padding: 15px;
 }
+.edexcel-math-2 a:hover {
+    background-color: #5BC0EB;
+}
 .edexcel-math img{
     width: 12%;
 }
@@ -235,6 +238,9 @@ body {
     color: white;
     padding: 15px;
 }
+.edexcel-chemistry-2 a:hover {
+    background-color: #5BC0EB;
+}
 .edexcel-chemistry img{
     width: 12%;
 }
@@ -280,6 +286,9 @@ body {
     background-color: cornflowerblue;
     color: white;
     padding: 15px;
+}
+.edexcel-physics-2 a:hover {
+    background-color: #5BC0EB;
 }
 .edexcel-physics img{
     width: 12%;
@@ -625,4 +634,134 @@ table {
 .x-hr {
     background-color: black;
     height: 1px;
+}
+.physicspptitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Re do this 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+.navvvvv {
+    position: sticky;
+    top: 0;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 30px;
+    background-color: white;
+}
+#navbar:hover {
+    cursor: default;
+}
+#nav-menu a{
+    color: black;
+    transition: all 0.3s ease;
+    padding: 10px;
+    font-weight: bold;
+}
+#nav-menu a:hover{
+    color: #0077c2;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0077c2;
+}
+#nav-menu-2 a {
+    padding: 10px;
+    color: darkblue;
+    font-weight: 1000;
+    opacity: 0.6;
+}
+#nav-menu-2 a:hover{
+    color: darkblue;
+    opacity: 1;
+}
+#logo {
+    font-size: 20px;
+    display: flex;
+}
+#logo img{
+    width: 20%;
+}
+#nav-menu {
+    display: flex;
+}
+#nav-menu ul{
+    display: flex;
+}
+#nav-menu li{
+    list-style-type: none;
+    padding-right: 20px;
+}
+#nav-menu li a{
+    text-decoration: none;
+}
+#nav-menu-2 {
+    display: flex;
+}
+#nav-menu-2 a{
+    text-decoration: none;
+}
+#showcase {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #555555;
+}
+#showcase h1{
+    font-size: 40px;
+    max-width: 50%;
+    color: white;
+    margin-bottom: 60px;
+}
+#showcase img {
+    width: 40%;
+}
+#home-buttons a{
+    border-radius: 40px;
+    background-color:#222222;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+#home-buttons a:hover{
+    background-color:white;
+    color: black;
+}
+.Sub-Heading{
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+*/
+.pastpapersphysics {
+    display: flex;
+    justify-content: space-around;
+}
+.part1 h1, h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.part2 h1, h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.part1 a, .part2 a{
+    color: cornflowerblue;
+    padding: 10px;
+}
+.part1 a:hover{
+    color: #5BC0EB;
 }
