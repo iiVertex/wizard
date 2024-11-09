@@ -765,3 +765,52 @@ table {
 .part1 a:hover{
     color: #5BC0EB;
 }
+
+/* Drop Down */
+.dropdown1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+top: 100%;
+left: 50%;
+transform: translateX(-50%);
+background-color: white;
+min-width: 200px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+text-align: center;
+z-index: 1;
+}
+.dropdown-content h4 {
+    margin: 20px;
+}
+.dropdown-content a:hover {
+color: #5BC0EB;
+}
+
+/* Show dropdown content on hover or click */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+display: block;
+}
+.drop-option {
+margin-left: 20px;
+}
