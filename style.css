@@ -338,6 +338,9 @@ body {
 .edexcel-biology img{
     width: 12%;
 }
+.cambridge-subjects a:hover{
+    background-color: #5BC0EB;
+}
 .cambridge-title {
     text-align: center;
     font-size: 60px;
@@ -405,7 +408,7 @@ body {
     justify-content: flex-start;
 }
 .cambridge-arabic-1 h1{
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,7 +455,7 @@ body {
     justify-content: flex-start;
 }
 .cambridge-computer-science-1 h1{
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -481,7 +484,7 @@ body {
     padding: 15px;
 }
 .cambridge-computer-science img{
-    width: 12%;
+    max-width: 13%;
 }
 /* ICT */
 .cambridge-ict {
@@ -499,7 +502,7 @@ body {
     justify-content: flex-start;
 }
 .cambridge-ict-1 h1{
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
