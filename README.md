@@ -26,7 +26,7 @@ If you'd like to contribute:
 ## Future Plans
 - Adding more subjects and years.
 - Search functionality to make finding papers easier.
-- Integration of mark schemes alongside question papers.
+- Addition of subject-topic questions
 - Enhanced UI/UX features for a better user experience.
 
 ## Contact
