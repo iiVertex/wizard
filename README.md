@@ -15,7 +15,6 @@ The website organizes past papers into an easily navigable structure, allowing u
 ## Development
 This project uses:
 - **HTML/CSS**: For structure and styling.
-- **JavaScript**: To add interactivity (if applicable).
 - **GitHub Pages**: To host the website.
 
 ## How to Contribute
