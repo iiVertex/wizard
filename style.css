@@ -22,6 +22,7 @@ body {
 .navvvvv {
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 #navbar {
     display: flex;
@@ -595,11 +596,11 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
     padding-bottom: 0;
 }
 .slogan-1 h2{
     color:#000000;
+    margin-top: 30px;
 }
 
 .slogan-2 {
@@ -607,7 +608,6 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 35px;
     padding-bottom: 50px;
 }
 .slogans {
@@ -816,4 +816,232 @@ display: block;
 }
 .drop-option {
 margin-left: 20px;
+}
+
+/* Navbar when small width */
+.small-nav {
+    top: 0;
+    z-index: 3;
+    display: none;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.small-nav img{
+    padding: 0;
+    max-width: 30px;
+    cursor: pointer;
+}
+.small-nav img:hover {
+    transform: scale(1.1);
+}
+
+.small-menu {
+    display: none;
+    flex-direction: column;
+    text-align: right;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+}
+.small-menu ul{
+    margin-top: 10px;
+}
+.small-menu a:hover {
+    color: #0077c2;
+    background-color: white;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0077c2;
+    
+}
+/* Media Query for Home Page */
+@media screen and (max-width: 810px) and (min-width: 512px) {
+    /* Navbar when small width */
+    .small-nav {
+        top: 0;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .small-nav img{
+        padding: 0;
+        max-width: 30px;
+        cursor: pointer;
+    }
+    .small-nav img:hover {
+        transform: scale(1.1);
+    }
+
+    .small-menu {
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        z-index: 3;
+        background-color: white;
+        width: 100%;
+    }
+    .small-menu ul{
+        margin: 10px;
+    }
+    .small-menu a:hover {
+        color: #0077c2;
+        background-color: white;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #0077c2;
+        
+    }
+    #navbar {
+        display: none;
+    }
+    .slogans{
+        width: 100%;
+        margin: auto;
+    }
+    .slogan-1 {
+        font-size: 12px;
+        align-items: center;
+        margin: auto;
+        padding: 5px;
+        padding-bottom: 0;
+    }
+    .slogan-1 h2{ 
+        color:#000000;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .slogan-2 {
+        font-size: 12px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .mini-nav h1 {
+        background: linear-gradient(45deg, #FF5733, #00C0FF);
+        background-size: 200% 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        width: 80%;
+        margin: auto;
+        animation: animateGradient 2s infinite;
+        font-size: 20px;
+    }
+    #showcase h1{
+        font-size: 30px;
+        max-width: 65%;
+    }
+}
+/* Media Query for Home Page */
+@media screen and (max-width: 512px) and (min-width: 10px) { 
+    /* Navbar when small width */
+    .small-nav {
+        top: 0;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .small-nav img{
+        padding: 0;
+        max-width: 30px;
+        cursor: pointer;
+    }
+    .small-nav img:hover {
+        transform: scale(1.1);
+    }
+
+    .small-menu {
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        z-index: 3;
+        background-color: white;
+        width: 100%;
+    }
+    .small-menu ul{
+        margin: 10px;
+    }
+    .small-menu a:hover {
+        color: #0077c2;
+        background-color: white;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #0077c2;
+        
+    }
+    #navbar {
+        display: none;
+    }
+    #showcase {
+        align-items: center;
+        background-color: #555555;
+        margin: auto;
+    }
+    #showcase h1{
+        font-size: 25px;
+        max-width: 100%;
+        color: white;
+        margin-bottom: 60px;
+    }
+    #showcase img {
+        width: 40%;
+    }
+    #home-buttons a{
+        border-radius: 40px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        background-color:#222222;
+        color: white;
+        padding: 10px;
+        align-items: center;
+        text-decoration: none;;
+    }
+    #home-buttons a:hover{
+        background-color:white;
+        color: black;
+    }
+    .slogans{
+        width: 100%;
+        margin: auto;
+    }
+    .slogan-1 {
+        font-size: 12px;
+        align-items: center;
+        margin: auto;
+        padding: 5px;
+        padding-bottom: 0;
+    }
+    .slogan-1 h2{ 
+        color:#000000;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .slogan-2 {
+        font-size: 12px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .mini-nav h1 {
+        background: linear-gradient(45deg, #FF5733, #00C0FF);
+        background-size: 200% 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        width: 80%;
+        margin: auto;
+        animation: animateGradient 2s infinite;
+        font-size: 20px;
+    }
 }
