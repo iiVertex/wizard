@@ -1109,6 +1109,9 @@ margin-left: 20px;
     #showcase a{
         padding: 15px;
     }
+    .subject-card {
+        display: none;
+    }
     .edexcel-subjects img{
         display: none;
     }
@@ -1166,6 +1169,9 @@ margin-left: 20px;
     }
 }
 @media screen and (max-width: 1418px) and (min-width: 810px) {
+    .subject-card {
+        display: none;
+    }
     .edexcel-title {
         font-size: 40px;
     }
@@ -1220,5 +1226,10 @@ margin-left: 20px;
     }
     .cambridge-ict-1, .cambridge-arabic-1, .cambridge-computer-science-1, .cambridge-english-1{
         width: 72%;
+    }
+}
+@media (min-width: 1418px) {
+    .subject-card {
+        display: none;
     }
 }
