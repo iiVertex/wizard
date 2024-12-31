@@ -73,7 +73,7 @@ body {
 }
 #nav-menu li{
     list-style-type: none;
-    padding-right: 20px;
+    padding-right: 6px;
 }
 #nav-menu li a{
     text-decoration: none;
