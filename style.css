@@ -194,7 +194,7 @@ body {
     background-color: #5BC0EB;
 }
 .edexcel-math img{
-    width: 12%;
+    width: 5.5rem;
 }
 /* chemistry */
 .edexcel-chemistry {
@@ -243,7 +243,8 @@ body {
     background-color: #5BC0EB;
 }
 .edexcel-chemistry img{
-    width: 12%;
+    width: 5.7rem;
+    height: 100%;
 }
 /* Physics */
 .edexcel-physics {
@@ -292,7 +293,8 @@ body {
     background-color: #5BC0EB;
 }
 .edexcel-physics img{
-    width: 12%;
+    width: 5.5rem;
+    height: 100%;
 }
 /* biology */
 .edexcel-biology {
