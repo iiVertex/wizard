@@ -656,11 +656,17 @@ table {
     margin: auto;
 }
 .blog-1 {
-    width: 80%;
-    padding: 20px 0px;
+    width: 60%;
+    padding: 30px 0px;
     background-color:#f4f4f4;
     border-radius: 50px;
     margin: 30px auto;
+}
+.blog-1 a {
+    font-weight: bold;
+}
+.blog-1 a:hover{
+    color: #0077c2;
 }
 .blog-content {
     display: flex;
