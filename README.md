@@ -31,7 +31,7 @@ If you'd like to contribute:
 
 ## Contact
 Feel free to reach out with suggestions or feedback:
-- **Email**: [ammaryahia23@gmail.com]
+- **Email**: [ammaryahia23@gmail.com].
 
 ---
 This project is built with students in mind. Happy studying!!
