@@ -49,14 +49,18 @@ body {
     box-shadow: 0 0 5px #0077c2;
 }
 #nav-menu-2 a {
+    color: black;
+    transition: all 0.3s ease;
     padding: 10px;
-    color: darkblue;
-    font-weight: 1000;
-    opacity: 0.6;
+    font-weight: bold;
 }
 #nav-menu-2 a:hover{
-    color: darkblue;
-    opacity: 1;
+    color: #0077c2;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0077c2;
 }
 #logo {
     font-size: 20px;
@@ -115,6 +119,49 @@ body {
     font-size: 50px;
     text-align: center;
     margin: 20px 0;
+}
+.slogans{
+    width: 100%;
+    margin: auto;
+}
+.slogan-1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+}
+.slogan-1 h2{
+    color:#000000;
+    margin-top: 30px;
+}
+
+.slogan-2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.slogans {
+    background-color: #f3f3f3;
+}
+.mini-nav {
+    margin: 20px;
+    text-align: center;
+    padding: 50px;
+}
+.mini-nav h1 {
+    background: linear-gradient(45deg, #FF5733, #00C0FF);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 80%;
+    margin: auto;
+    animation: animateGradient 1.5s infinite;
+    font-size: 30px;
 }
 .pastpapers-main {
     display: flex;
@@ -589,49 +636,6 @@ table, td, th {
 table {
     font-size: 20px;
 }
-.slogans{
-    width: 100%;
-    margin: auto;
-}
-.slogan-1 {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0;
-}
-.slogan-1 h2{
-    color:#000000;
-    margin-top: 30px;
-}
-
-.slogan-2 {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-}
-.slogans {
-    background-color: #f3f3f3;
-}
-.mini-nav {
-    margin: 20px;
-    text-align: center;
-    padding: 50px;
-}
-.mini-nav h1 {
-    background: linear-gradient(45deg, #FF5733, #00C0FF);
-    background-size: 200% 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    width: 80%;
-    margin: auto;
-    animation: animateGradient 2s infinite;
-    font-size: 30px;
-}
-
 .w-hr {
     background-color: blue;
     height: 100px;
