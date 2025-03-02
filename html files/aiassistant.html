@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Wizard | AI Assistant</title>
+    <link rel="stylesheet" href="../css + js files/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add this in the <head> section -->
+        <style>
+            .typing {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+            
+            .typing-dot {
+                width: 4px;
+                height: 4px;
+                background: #3b82f6;
+                border-radius: 50%;
+                animation: typingAnimation 1s infinite;
+            }
+            
+            .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+            .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+            
+            @keyframes typingAnimation {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-4px); }
+            }
+        </style>
+</head>
+<body class="text-white">
+    <!-- Navbar (same as other pages) -->
+    <nav class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="IG Wizard Logo" class="h-8 w-8">
+                    <span class="text-lg font-semibold">IG Wizard</span>
+                </a>
+
+                <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <div id="nav-links" class="hidden md:flex md:space-x-4">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 container mx-auto px-6 pb-12">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold mb-4">AI Study Assistant</h1>
+            <p class="text-xl text-gray-300">Your personal tutor powered by AI</p>
+        </div>
+
+        <!-- Chat Interface -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Chat Messages Container -->
+            <div id="chat-messages" class="bg-black bg-opacity-30 rounded-lg p-4 h-[500px] overflow-y-auto mb-4">
+                <!-- Welcome Message -->
+                <div class="flex items-start mb-4">
+                    <div class="flex-shrink-0">
+                        <img src="../images/logo.png" alt="AI" class="h-8 w-8 rounded-full">
+                    </div>
+                    <div class="ml-3 bg-blue-500 bg-opacity-20 rounded-lg p-3">
+                        <p class="text-white">Hello! I'm your AI Study Assistant. I can help you with:</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300">
+                            <li>Understanding any subject concepts</li>
+                            <li>Explaining solutions and methods</li>
+                            <li>Step-by-step problem solving</li>
+                            <li>Study tips and guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <!-- Update the input area -->
+            <div class="flex space-x-4">
+                <input type="text" id="user-input" 
+                    class="flex-1 bg-black bg-opacity-30 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Ask me anything...">
+                <button id="voice-button" 
+                    class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                </button>
+                <button id="send-button" 
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition-colors">
+                    Send
+                </button>
+            </div>
+            
+            <!-- Add this to your script section before the closing </body> tag -->
+            <script>
+                // Mobile menu functionality
+                document.getElementById('mobile-menu-button').addEventListener('click', () => {
+                    document.getElementById('mobile-menu').classList.toggle('hidden');
+                });
+            // Chat functionality
+            const chatMessages = document.getElementById('chat-messages');
+            const userInput = document.getElementById('user-input');
+            const sendButton = document.getElementById('send-button');
+    
+            async function sendMessage() {
+                const message = userInput.value.trim();
+                if (!message) return;
+    
+                addMessageToChat('user', message);
+                userInput.value = '';
+    
+                try {
+                    // Just show the loading animation without any text
+                    const loadingDiv = document.createElement('div');
+                    loadingDiv.className = 'flex items-start mb-4';
+                    loadingDiv.innerHTML = `
+                        <div class="flex-shrink-0 mr-3">
+                            <img src="../images/logo.png" alt="AI" class="h-8 w-8 rounded-full">
+                        </div>
+                        <div class="bg-blue-500 bg-opacity-20 rounded-lg p-3">
+                            <div class="typing">
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                            </div>
+                        </div>
+                    `;
+                    chatMessages.appendChild(loadingDiv);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+        
+                    const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': 'Bearer vVeJjD7bVb2wERExjpThH6lIdddMYA7d'
+                        },
+                        body: JSON.stringify({
+                            model: "mistral-tiny",
+                            messages: [{
+                                role: "system",
+                                content: "You are a helpful study assistant. Provide clear, concise explanations and guidance for any academic subject."
+                            }, {
+                                role: "user",
+                                content: message
+                            }],
+                            max_tokens: 1000
+                        })
+                    });
+        
+                    const data = await response.json();
+                    chatMessages.removeChild(loadingDiv);
+                    addMessageToChat('assistant', data.choices[0].message.content);
+                } catch (error) {
+                    console.error('Error:', error);
+                    chatMessages.removeChild(chatMessages.lastChild);
+                    addMessageToChat('assistant', 'Sorry, I encountered an error. Please try again.');
+                }
+            }
+            
+        // Update the addMessageToChat function
+        function addMessageToChat(role, content) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'flex items-start mb-4';
+        
+            const isUser = role === 'user';
+            messageDiv.innerHTML = `
+                ${!isUser ? `
+                    <div class="flex-shrink-0 mr-3">
+                        <img src="../images/logo.png" alt="AI" class="h-8 w-8 rounded-full">
+                    </div>
+                ` : ''}
+                <div class="${isUser ? 'ml-auto' : ''} ${isUser ? 'bg-blue-300' : 'bg-blue-500'} bg-opacity-30 rounded-lg p-3">
+                    <p class="text-white">${content}</p>
+                </div>
+            `;
+        
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+            sendButton.addEventListener('click', sendMessage);
+            userInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendMessage();
+            });
+        // Voice recognition functionality
+        if ('webkitSpeechRecognition' in window) {
+            const recognition = new webkitSpeechRecognition();
+            const voiceButton = document.getElementById('voice-button');
+            
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.lang = 'en-US';
+    
+            voiceButton.addEventListener('click', () => {
+                recognition.start();
+                voiceButton.classList.add('bg-red-500');
+            });
+    
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                userInput.value = transcript;
+                voiceButton.classList.remove('bg-red-500');
+            };
+    
+            recognition.onend = () => {
+                voiceButton.classList.remove('bg-red-500');
+            };
+    
+            recognition.onerror = () => {
+                voiceButton.classList.remove('bg-red-500');
+            };
+        }
+    </script>
+</body>
+</html>

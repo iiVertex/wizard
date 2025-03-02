@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Papers | IG Wizard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css + js files/style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Title -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="IG Wizard Logo" class="h-8 w-8">
+                    <span class="text-lg font-semibold">IG Wizard</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Navigation Links -->
+                <div id="nav-links" class="hidden md:flex md:space-x-4">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 container mx-auto px-6 pb-12">
+        <h1 class="text-3xl font-bold mb-8 text-center">Past Papers</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- IGCSE / O Levels Card -->
+            <div class="card p-6 rounded-lg transition-transform hover:scale-105">
+                <h2 class="text-2xl font-bold mb-4 text-center">IGCSE / O Levels</h2>
+                <p class="mb-6 text-gray-300">Access a comprehensive collection of IGCSE and O Level past papers, mark schemes, and specifications to help you prepare for your exams.</p>
+                <div class="space-y-3">
+                    <div class="flex justify-center">
+                        <img src="../images/igcse-icon.png" alt="IGCSE Icon" class="h-24 mb-4">
+                    </div>
+                    <a href="igcse.html" class="btn-primary block text-center">Browse IGCSE Resources</a>
+                </div>
+            </div>
+
+            <!-- AS / A Levels Card -->
+            <div class="card p-6 rounded-lg transition-transform hover:scale-105">
+                <h2 class="text-2xl font-bold mb-4 text-center">International AS / A Levels</h2>
+                <p class="mb-6 text-gray-300">Explore our collection of AS and A Level past papers, mark schemes, and specifications to enhance your preparation for advanced level examinations.</p>
+                <div class="space-y-3">
+                    <div class="flex justify-center">
+                        <img src="../images/alevel-icon.png" alt="A Level Icon" class="h-24 mb-4">
+                    </div>
+                    <a href="comingsoon.html" class="btn-primary block text-center">Browse A Level Resources</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2025 IG Wizard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

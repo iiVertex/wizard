@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Wizard | Past Papers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css + js files/style.css">
+</head>
+<body class="text-white">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Title -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="IG Wizard Logo" class="h-8 w-8">
+                    <span class="text-lg font-semibold">IG Wizard</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Navigation Links -->
+                <div id="nav-links" class="hidden md:flex md:space-x-4">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 min-h-screen flex flex-col items-center justify-center px-4">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold mb-4">Choose Your Exam Board</h1>
+            <p class="text-xl text-gray-300">Select your examination board to access past papers and resources</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+            <!-- Cambridge Link -->
+            <a href="cambridge.html" class="card p-6 rounded-lg transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center">
+                <img src="../images/Cambridge.png" 
+                     alt="Cambridge Assessment International Education" 
+                     class="h-24 object-contain mb-4">
+                <h2 class="text-2xl font-bold text-center">Cambridge</h2>
+            </a>
+
+            <!-- Pearson Edexcel Link -->
+            <a href="edexcel.html" class="card p-6 rounded-lg transition-transform duration-300 hover:scale-105 flex flex-col items-center justify-center">
+                <img src="../images/Pearson.jpg" 
+                     alt="Pearson Edexcel" 
+                     class="h-24 object-contain mb-4">
+                <h2 class="text-2xl font-bold text-center">Pearson Edexcel</h2>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg mt-16 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">&copy; 2025 IGWizard Learning. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

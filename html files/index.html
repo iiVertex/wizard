@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Wizard | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css + js files/style.css">
+</head>
+<body class="text-white">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Title -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="IG Wizard Logo" class="h-8 w-8">
+                    <span class="text-lg font-semibold">IG Wizard</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Navigation Links -->
+                <div id="nav-links" class="hidden md:flex md:space-x-4">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">Explore the Universe of Knowledge</h1>
+            <p class="text-gray-300 text-xl mb-8">Join thousands of learners worldwide who use EduSpace to access high-quality courses, resources, and tools to achieve their educational goals.</p>
+            <a href="#" class="mt-6 inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Explore Courses</a>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mx-auto p-8 mt-16">
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold mb-8 text-center">Featured Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Introduction to Astronomy</h3>
+                    <p class="text-gray-300 mt-2">Discover the wonders of the universe and learn about stars, planets, and galaxies.</p>
+                    <p class="text-2xl font-bold text-green-400 mt-4">Free</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Space Exploration 101</h3>
+                    <p class="text-gray-300 mt-2">Learn about the history and future of space exploration.</p>
+                    <p class="text-2xl font-bold text-green-400 mt-4">$99</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Astrophysics for Beginners</h3>
+                    <p class="text-gray-300 mt-2">Understand the fundamental principles of astrophysics.</p>
+                    <p class="text-2xl font-bold text-green-400 mt-4">$149</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-semibold mb-8 text-center">Why Choose IG Wizard?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Past Papers</h3>
+                    <p class="text-gray-300 mt-2">Find the most recent past papers for a variety of subjects</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Flexible Learning</h3>
+                    <p class="text-gray-300 mt-2">Study at your own pace, anytime, anywhere.</p>
+                </div>
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Community Support</h3>
+                    <p class="text-gray-300 mt-2">Join a global community of learners and mentors.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg mt-16 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">&copy; 2025 IGWizard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Interactivity -->
+    <script>
+        // Add a simple hover effect for cards
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+                card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

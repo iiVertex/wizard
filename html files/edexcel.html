@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Wizard | Past Papers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css + js files/style.css">
+</head>
+<body class="text-white">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Title -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="../images/logo.png" alt="IG Wizard Logo" class="h-8 w-8">
+                    <span class="text-lg font-semibold">IG Wizard</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-white hover:text-blue-400">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <!-- Navigation Links -->
+                <div id="nav-links" class="hidden md:flex md:space-x-4">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="aiassistant.html" class="nav-link hover:text-blue-400">AI Tutor</a>
+                    <a href="igcse.html" class="nav-link hover:text-blue-400">IGCSE / O Levels</a>
+                    <a href="#" class="nav-link hover:text-blue-400">AS/A Levels</a>
+                    <a href="#" class="text-blue-400 hover:underline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold mb-4">Edexcel Subjects</h1>
+            <p class="text-xl text-gray-300">Here you can find Edexcel IGCSE Subjects and access a variety of resources to test your abilities and improve your grades!</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Mathematics Card -->
+            <div class="card rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 mr-4">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#60A5FA" stroke-width="2"/>
+                                <path d="M30 50h40" stroke="#FFFFFF" stroke-width="4"/>
+                                <path d="M50 30v40" stroke="#FFFFFF" stroke-width="4"/>
+                                <path d="M35 35l30 30M35 65l30-30" stroke="#60A5FA" stroke-width="4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">Mathematics</h2>
+                            <p class="text-gray-300">Specification A (9-1)</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Mathematics%20A/2016/Specification%20and%20sample%20assessments/international-gcse-in-mathematics-spec-a.pdf" 
+                           target="_blank"
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
+                        <a href="mathedexcel.html" 
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chemistry Card -->
+            <div class="card rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 mr-4">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M40 20h20v20l15 35H25l15-35V20z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                                <path d="M30 65l40-30M30 35l40 30" stroke="#60A5FA" stroke-width="4"/>
+                                <circle cx="50" cy="50" r="5" fill="#60A5FA"/>
+                                <circle cx="35" cy="40" r="3" fill="#FFFFFF"/>
+                                <circle cx="65" cy="60" r="3" fill="#FFFFFF"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">Chemistry</h2>
+                            <p class="text-gray-300">2017 Specification (9-1)</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Chemistry/2017/specification-and-sample-assessments/international-gcse-chemistry-2017-specification.pdf" 
+                           target="_blank"
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
+                        <a href="chemistryedexcel.html" 
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Physics Card -->
+            <div class="card rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 mr-4">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="rotate(30 50 50)">
+                                  <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                                  <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#FFFFFF" stroke-width="2" transform="rotate(60 50 50)"/>
+                                  <ellipse cx="50" cy="50" rx="45" ry="20" fill="none" stroke="#FFFFFF" stroke-width="2" transform="rotate(120 50 50)"/>
+                                </g>
+                                <circle cx="50" cy="50" r="6" fill="#60A5FA"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">Physics</h2>
+                            <p class="text-gray-300">2017 Specification (9-1)</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2017/specification-and-sample-assessments/international-gcse-physics-2017-specification.pdf" 
+                           target="_blank"
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
+                        <a href="physicsedexcel.html" 
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biology Card -->
+            <div class="card rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 mr-4">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 20c-30 30-30 70 0 60s30-30 0-60" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                                <path d="M50 20c30 30 30 70 0 60s-30-30 0-60" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                                <path d="M35 40c15 15 15 35 0 30s-15-15 0-30" fill="none" stroke="#60A5FA" stroke-width="2"/>
+                                <path d="M65 40c-15 15-15 35 0 30s15-15 0-30" fill="none" stroke="#60A5FA" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">Biology</h2>
+                            <p class="text-gray-300">2017 Specification (9-1)</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" 
+                           target="_blank"
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Specification</a>
+                        <a href="biologyedexcel.html" 
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Past Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg mt-16 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">&copy; 2025 IGWizard Learning. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
