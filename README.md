@@ -10,7 +10,7 @@ Access the project here: [Wizard - IGCSE Past Papers](https://iivertex.github.io
 - **Past Papers Access**: Quickly find and download past exam papers.
 
 ## How It Works
-The website organizes past papers into an easily navigable structure, allowing users to select subjects and years without unnecessary complexity. All materials are conveniently hosted and can be accessed directly via the browser
+The website organizes past papers into an easily navigable structure, allowing users to select subjects and years without unnecessary complexity. All materials are conveniently hosted and can be accessed directly via the browser.
 
 ## Development
 This project uses:
